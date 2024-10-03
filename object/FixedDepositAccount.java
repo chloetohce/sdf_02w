@@ -58,7 +58,7 @@ public class FixedDepositAccount extends BankAccount {
     }
 
     public void setDuration(int duration) {
-        if (changedInterest == true) {
+        if (changedDuration == true) {
             throw new IllegalArgumentException("Duration has already been changed once");
         }
         this.durationMonths = duration;

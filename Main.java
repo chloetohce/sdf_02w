@@ -19,7 +19,14 @@ public class Main {
         fda.deposit(50f);
         fda.withdraw(20f);
         fda.getTransactions();
-        System.out.println();
         System.out.println("FDA account balance: " + fda.getBalance());
+
+        System.out.println("====== Changing FDA interest and duration ======");
+        fda.setInterest(5f);
+        fda.setDuration(10);
+        //fda.setInterest(2f);
+        //fda.setDuration(8);
+        fda.close();
+        fda.setBalance(300);
     }
 }

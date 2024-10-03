@@ -68,8 +68,28 @@ public class BankAccount {
         }
     }
 
-    public void getBalance() {
-        System.out.println(this.balance);
+    public float getBalance() {
+        return this.balance;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Integer getNum() {
+        return num;
+    }
+
+    public void setBalance(float balance) {
+        this.balance = balance;
+    }
+
+    public boolean isClosed() {
+        return isClosed;
+    }
+
+    public void setClosed(boolean isClosed) {
+        this.isClosed = isClosed;
     }
 
     public void close() {

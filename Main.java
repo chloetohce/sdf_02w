@@ -1,4 +1,5 @@
 import object.BankAccount;
+import object.FixedDepositAccount;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,7 +11,15 @@ public class Main {
 
         System.out.println("====== Closing account ======");
         ba.close();
-        ba.deposit(200f);
+        //ba.deposit(200f);
         ba.getTransactions();
+
+        System.out.println("====== Fixed Deposit Account ======");
+        FixedDepositAccount fda = new FixedDepositAccount("Diana", 1000);
+        fda.deposit(50f);
+        fda.withdraw(20f);
+        fda.getTransactions();
+        System.out.println();
+        System.out.println("FDA account balance: " + fda.getBalance());
     }
 }
